@@ -1,0 +1,244 @@
+.onboarding-page {
+  min-height: 100vh;
+  padding: 32px 24px;
+  background: #f8f9fb;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.onboarding-card {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #e2e6ef;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 31, 77, 0.08);
+}
+
+.onboarding-header {
+  margin-bottom: 32px;
+}
+
+.onboarding-eyebrow {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #167f98;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.onboarding-header h1,
+.onboarding-step-title h2,
+.onboarding-step-title h3 {
+  margin: 0;
+  color: #0f1f4d;
+}
+
+.onboarding-header h1 {
+  font-size: 1.8rem;
+}
+
+.onboarding-header p,
+.onboarding-step-title p {
+  margin: 8px 0 0;
+  color: #65708a;
+  line-height: 1.5;
+}
+
+.onboarding-form {
+  display: grid;
+  gap: 30px;
+}
+
+.onboarding-section {
+  padding-top: 26px;
+  border-top: 1px solid #e2e6ef;
+}
+
+.onboarding-section:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.onboarding-step-title {
+  margin-bottom: 20px;
+}
+
+.onboarding-step-title h2 {
+  font-size: 1.2rem;
+}
+
+.onboarding-step-title h3 {
+  font-size: 1rem;
+}
+
+.onboarding-optional-label {
+  color: #65708a;
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+
+.onboarding-field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: #0f1f4d;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.onboarding-field > span {
+  color: #0f1f4d;
+}
+
+.onboarding-field > span::after {
+  color: #d23b4a;
+}
+
+.onboarding-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d8dee9;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f1f4d;
+  font: inherit;
+  font-weight: 400;
+}
+
+.onboarding-field input:focus {
+  outline: 0;
+  border-color: #167f98;
+  box-shadow: 0 0 0 3px rgba(22, 127, 152, 0.16);
+}
+
+.onboarding-field input:disabled {
+  cursor: not-allowed;
+  background: #f1f3f6;
+  color: #8a94a6;
+}
+
+.onboarding-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.onboarding-pill {
+  padding: 8px 16px;
+  border: 1px solid #d8dee9;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0f1f4d;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.onboarding-pill:hover {
+  border-color: #167f98;
+  background: #f3fbfb;
+}
+
+.onboarding-pill--selected {
+  border-color: #167f98;
+  background: #167f98;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+.onboarding-quick-button-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.onboarding-quick-button-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.onboarding-quick-button {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border: 1px solid #167f98;
+  border-radius: 12px;
+  background: transparent;
+  color: #167f98;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.onboarding-quick-button:hover {
+  background: #e8f5f6;
+}
+
+.onboarding-error {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff0f2;
+  color: #a22f3e;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.onboarding-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.onboarding-submit-button {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 12px;
+  background: #167f98;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.onboarding-submit-button:hover:not(:disabled) {
+  background: #0f6479;
+  transform: translateY(-1px);
+}
+
+.onboarding-submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .onboarding-page {
+    padding: 16px;
+  }
+
+  .onboarding-card {
+    padding: 28px 20px;
+  }
+
+  .onboarding-quick-button-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .onboarding-quick-button {
+    width: 100%;
+  }
+
+  .onboarding-submit-button {
+    width: 100%;
+  }
+}

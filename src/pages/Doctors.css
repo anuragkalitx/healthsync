@@ -1,0 +1,36 @@
+.doctors-page { max-width: 1100px; margin: 0 auto; color: #25304b; }
+.doctors-header h1, .doctor-row h2, .doctors-empty h2 { margin: 0; color: #0f1f4d; }
+.doctors-header h1 { font-size: 1.8rem; }
+.doctors-header p { margin: 7px 0 24px; color: #65708a; }
+.symptom-hero, .doctor-row, .doctors-empty { border: 1px solid #e2e6ef; border-radius: 12px; background: #fff; box-shadow: 0 3px 12px rgba(15,31,77,.06); }
+.symptom-hero { padding: 22px; }
+.symptom-search { display: flex; align-items: center; gap: 10px; padding: 0 14px; border: 1px solid #cbd5e2; border-radius: 9px; color: #167f98; }
+.symptom-search:focus-within { border-color: #167f98; outline: 2px solid rgba(22,127,152,.2); }
+.symptom-search input { width: 100%; height: 48px; border: 0; outline: 0; color: #25304b; font: inherit; }
+.symptom-recommendation { margin-top: 13px; padding: 10px 12px; border-radius: 8px; background: #e8f5f6; color: #0f1f4d; font-weight: 600; }
+.disclaimer { margin: 12px 0; color: #65708a; font-size: .84rem; line-height: 1.45; }
+.symptom-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.symptom-chips button, .clear-filters { padding: 8px 12px; border: 1px solid #d8e0ea; border-radius: 999px; background: #fff; color: #167f98; cursor: pointer; font: inherit; font-size: .86rem; font-weight: 600; }
+.symptom-chips button:hover, .clear-filters:hover { border-color: #167f98; background: #e8f5f6; }
+.doctor-filters { display: flex; align-items: end; gap: 14px; margin: 22px 0 14px; }
+.doctor-filters label { display: grid; flex: 1; gap: 6px; color: #566079; font-size: .86rem; font-weight: 600; }
+.doctor-filters select { height: 42px; padding: 0 10px; border: 1px solid #d8dee9; border-radius: 8px; background: #fff; color: #25304b; font: inherit; }
+.clear-filters { height: 42px; border-radius: 8px; }
+.results-count { margin: 0 0 12px; color: #65708a; font-size: .9rem; }
+.doctor-results { display: grid; gap: 14px; }
+.doctor-row { overflow: hidden; }
+.doctor-main { display: grid; grid-template-columns: auto minmax(180px,1.25fr) minmax(150px,1fr) minmax(150px,1fr) auto; align-items: center; gap: 18px; padding: 18px 20px; }
+.doctor-initials { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 50%; background: #dce8ff; color: #0f1f4d; font-size: .9rem; font-weight: 700; }
+.doctor-name { display: grid; gap: 7px; }
+.doctor-row h2 { font-size: 1rem; }
+.specialty-pill { justify-self: start; padding: 4px 8px; border-radius: 999px; background: #e8f5f6; color: #167f98; font-size: .78rem; font-weight: 700; }
+.doctor-clinic, .doctor-area { margin: 0; color: #566079; font-size: .9rem; }
+.details-button, .doctors-empty button { padding: 9px 11px; border: 1px solid #167f98; border-radius: 7px; background: #fff; color: #167f98; cursor: pointer; font: inherit; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+.doctor-details { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; padding: 16px 20px; border-top: 1px solid #e8ebf1; background: #fbfcff; }
+.doctor-details div { display: grid; gap: 5px; }
+.doctor-details span { color: #65708a; font-size: .8rem; }
+.doctor-details strong { color: #25304b; }
+.doctors-empty { padding: 48px 24px; text-align: center; }
+.doctors-empty button { margin-top: 14px; }
+@media (max-width: 850px) { .doctor-main { grid-template-columns: auto 1fr auto; } .doctor-clinic, .doctor-area { grid-column: 2; } .details-button { grid-column: 3; grid-row: 1 / span 2; } }
+@media (max-width: 640px) { .doctor-filters { align-items: stretch; flex-direction: column; } .doctor-main { grid-template-columns: auto 1fr; gap: 12px; } .doctor-clinic, .doctor-area { grid-column: 2; } .details-button { grid-column: 1 / -1; grid-row: auto; width: 100%; } .doctor-details { grid-template-columns: 1fr; } }
